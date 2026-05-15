@@ -21,9 +21,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ── Universal config ─────────────────────────────────────────────────────────
-LLM_BASE_URL = os.getenv("LLM_BASE_URL", "http://localhost:11434/v1")  # default: Ollama
-LLM_API_KEY = os.getenv("LLM_API_KEY", "ollama")  # some providers need a non-empty string
-LLM_MODEL = os.getenv("LLM_MODEL", "qwen2.5:7b")  # default: Ollama model
+LLM_BASE_URL = os.getenv("LLM_BASE_URL", "http://localhost:11434/v1").strip()  # default: Ollama
+LLM_API_KEY = os.getenv("LLM_API_KEY", "ollama").strip()  # some providers need a non-empty string
+LLM_MODEL = os.getenv("LLM_MODEL", "qwen2.5:7b").strip()  # default: Ollama model
 
 
 def _call_llm(prompt: str) -> str:
