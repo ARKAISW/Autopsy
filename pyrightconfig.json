@@ -1,8 +1,0 @@
-{
-    "venvPath": "/run/media/arka/New Volume/DEVELOPMENT/AUTOPSY",
-    "venv": ".venv",
-    "pythonVersion": "3.14",
-    "extraPaths": [
-        "./.venv/lib64/python3.14/site-packages"
-    ]
-}
