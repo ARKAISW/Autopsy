@@ -1,3 +1,5 @@
+![AUTOPSY](cover.png)
+
 # 🔬 AUTOPSY
 ### Market Dislocation Fingerprint Intelligence System
 
