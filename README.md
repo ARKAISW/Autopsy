@@ -1,20 +1,7 @@
----
-title: Autopsy Dashboard
-emoji: 🔬
-colorFrom: pink
-colorTo: purple
-sdk: streamlit
-sdk_version: 1.57.0
-app_file: dashboard/app.py
-pinned: false
----
-
 # 🔬 AUTOPSY
 ### Market Dislocation Fingerprint Intelligence System
 
 > *"Which historical crisis does the current market structure most resemble — and what happened next?"*
-
-**TechEx Intelligent Enterprise Solutions Hackathon 2026 — Track 4: Data & Intelligence**
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_Demo-blue?style=for-the-badge)](https://huggingface.co/spaces/ARKAISW/Autopsy)
 ---
