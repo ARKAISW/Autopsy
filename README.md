@@ -99,7 +99,6 @@ cp .env.example .env
 # Open .env and fill in your keys
 ```
 
-**⚠️ IMPORTANT:** Never commit or upload your `.env` file to GitHub or Hugging Face. Add it to your `.gitignore`.
 
 ### 4. Run
 ```bash
