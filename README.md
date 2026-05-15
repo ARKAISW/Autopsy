@@ -16,6 +16,7 @@ pinned: false
 
 **TechEx Intelligent Enterprise Solutions Hackathon 2026 — Track 4: Data & Intelligence**
 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_Demo-blue?style=for-the-badge)](https://huggingface.co/spaces/ARKAISW/Autopsy)
 ---
 
 ## What Is AUTOPSY?
@@ -162,20 +163,6 @@ autopsy/
 └── requirements.txt
 ```
 
----
-
-## Deployment (Hugging Face Spaces)
-
-1. Create a new Space on [huggingface.co/spaces](https://huggingface.co/spaces) with **Streamlit** SDK
-2. Push this repo to the Space
-3. Go to Space **Settings → Variables and secrets** and click **New secret** to add:
-   - `FRED_API_KEY`
-   - `LLM_BASE_URL`
-   - `LLM_API_KEY`
-   - `LLM_MODEL`
-4. The app will launch automatically
-
----
 
 ## Disclaimer
 
