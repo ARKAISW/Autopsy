@@ -168,7 +168,7 @@ autopsy/
 
 1. Create a new Space on [huggingface.co/spaces](https://huggingface.co/spaces) with **Streamlit** SDK
 2. Push this repo to the Space
-3. Go to Space **Settings → Repository Secrets** and add:
+3. Go to Space **Settings → Variables and secrets** and click **New secret** to add:
    - `FRED_API_KEY`
    - `LLM_BASE_URL`
    - `LLM_API_KEY`
