@@ -21,9 +21,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ── Universal config ─────────────────────────────────────────────────────────
-LLM_BASE_URL = os.getenv("LLM_BASE_URL", "http://localhost:11434/v1").strip()  # default: Ollama
-LLM_API_KEY = os.getenv("LLM_API_KEY", "ollama").strip()  # some providers need a non-empty string
-LLM_MODEL = os.getenv("LLM_MODEL", "qwen2.5:7b").strip()  # default: Ollama model
+# ── Universal config ─────────────────────────────────────────────────────────
+# Secrets are loaded dynamically inside _call_llm to ensure Streamlit Secrets
+# have been injected into os.environ before reading.
 
 
 def _call_llm(prompt: str) -> str:
@@ -31,13 +31,17 @@ def _call_llm(prompt: str) -> str:
     Call any OpenAI-compatible chat completions API.
     This single function works with every provider listed above.
     """
-    url = f"{LLM_BASE_URL.rstrip('/')}/chat/completions"
+    base_url = os.getenv("LLM_BASE_URL", "http://localhost:11434/v1").strip()
+    api_key = os.getenv("LLM_API_KEY", "ollama").strip()
+    model = os.getenv("LLM_MODEL", "qwen2.5:7b").strip()
+
+    url = f"{base_url.rstrip('/')}/chat/completions"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {LLM_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
     }
     payload = {
-        "model": LLM_MODEL,
+        "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": 600,
         "temperature": 0.3,

@@ -10,12 +10,12 @@ AUTOPSY is a real-time market stress intelligence system designed to identify hi
     2. Computes a "fingerprint vector" representing the current structural state.
     3. Compares the vector against fingerprints of 10 historical crises using cosine similarity.
     4. Projects fingerprints into 2D space using UMAP for visualization.
-    5. Generates an AI-powered risk narrative using Claude (Anthropic API).
+    5. Generates an AI-powered risk narrative using an LLM (supports Claude, Gemini, Groq, or local models like Ollama).
 - **Tech Stack:**
     - **Language:** Python 3.11+ (Current environment: 3.14)
     - **Frontend:** Streamlit, Plotly
     - **Data/Math:** Pandas, NumPy, Scipy, Scikit-learn, UMAP-learn
-    - **APIs:** `yfinance` (market data), `fredapi` (macro data), `anthropic` (AI agent)
+    - **APIs:** `yfinance` (market data), `fredapi` (macro data), Universal LLM interface (OpenAI-compatible)
 
 ## Directory Structure
 
