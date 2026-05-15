@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "/run/media/arka/New Volume/DEVELOPMENT/AUTOPSY/.venv/bin/python",
+    "python.interpreterPath": "/run/media/arka/New Volume/DEVELOPMENT/AUTOPSY/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "/run/media/arka/New Volume/DEVELOPMENT/AUTOPSY/.venv/lib64/python3.14/site-packages"
+    ]
+}
