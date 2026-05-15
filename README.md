@@ -5,7 +5,7 @@
 
 > *"Which historical crisis does the current market structure most resemble — and what happened next?"*
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_Demo-blue?style=for-the-badge)](https://huggingface.co/spaces/ARKAISW/Autopsy)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_Demo-blue?style=for-the-badge)](https://huggingface.co/spaces/ARKAISW/Autopsy) [![Streamlit App](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://autopsy-cmw8qtmjgtrhrzd5jpgb7b.streamlit.app/)
 ---
 
 ## What Is AUTOPSY?
